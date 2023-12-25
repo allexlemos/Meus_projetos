@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulador de ensino</title>
+    </head>
+    <body>
+        <header>
+            <h1>CADASTRO DO VOLUNTARIO</h1>
+        </header>
+        <main>
+            <form action="">
+                <Section>
+                   <h2>Dados do usuario</h2>
+                        <label for="inputname">Nome:</label> 
+                        <input placeholder="ex. Seu nome" id="inputname" type="text"/>
+                        <br>
+                        <label for="inputlastname">Sobrenome:</label> 
+                        <input placeholder="ex. Silva" id="inputlastname" type="text"/>
+                        <br>
+                        <label for="inputborn">Data de nascimento:</label> 
+                        <input id="inputborn" type="date" min="1900-12-31" max="2100-12-31"/>
+                        <br>
+                        <label for="inputcpf">Cpf:</label> 
+                        <input id="inputcpf" placeholder="ex. 414.414.141.23" type="text"/>
+                        <br>
+                        <label for="inputrg">RG:</label> 
+                        <input id="inputrg" placeholder="ex. 55125125-9" type="text"/>
+                        <br>
+                        <label for="inputfone">Telefone:</label> 
+                        <input id="inputfone" type="tel" placeholder="ex. (19)99999-2222"/>
+                </Section>
+                <section>
+                    <h2>Endereco</h2>
+                    <label for="inputcep">CEP:</label> 
+                    <input id="inputcep" type="text" placeholder="ex. 13933-333"/>
+                    <br>
+                    <label for="inputrua">Rua:</label> 
+                    <input id="inputrua" type="text" placeholder="ex. Rua jose jose jose"/>
+                    <br>
+                    <label for="inputnumero">Numero:</label> 
+                    <input id="inputnumero" type="number" placeholder="ex. 231"/>
+                    <br>
+                    <label for="inputcomp">Complemento:</label> 
+                    <input id="inputcomp" type="text" placeholder="ex. sitio boa vista"/>
+
+                </section>
+                <section>
+                    <h2>Configuracao da conta</h2>
+                    <label for="select_conta">Tipo de conta:</label>
+                    <select name="tipo_conta" id="select_conta">
+                        <option value="" selected disabled>Selecione uma opcao</option>
+                        <option value="basic">Basico</option>
+                        <option value="prime">Prime</option>
+                        <option value="premium">Premium</option>
+                    </select>
+                    <br>
+                    <label for="select_contrato">Tempo de contrato:</label>
+                    <select name="tipo_contrato" id="select_contrato">
+                        <option value="" selected disabled>Selecione uma opcao</option>
+                        <option value="1ano">1 Anos</option>
+                        <option value="2ano">2 Anos</option>
+                        <option value="4ano">4 Anos</option>
+                    </select>
+                    <br>
+                    <label for="select_pagamento">Tipo de pagamento:</label>
+                    <select name="tipo_pagamento" id="select_pagamento">
+                        <option value="" selected disabled>Selecione uma opcao</option>
+                        <option value="2x">2 vezes</option>
+                        <option value="4x">4 vezes</option>
+                        <option value="6x">6 vezes</option>
+                    </select>
+                    <br>
+                    <label for="inputsenha">Escolha a senha:</label>
+                    <input type="password" name="" id="inputsenha" placeholder="ex. Senhaforte1?">
+                </section>
+                <section>
+                    <h2>Pesquisa</h2>
+                    <ol>
+                        <li>
+                            <label for="inputquestao1">Como voce avalia sua facilidade de aprendizado de 1 a 5?</label>
+                            <input type="number" min="1" max="5" name="" id="inputquestao1" placeholder="ex. 5">
+                        </li>
+                        <li>
+                            <label for="inputquestao2">Como voce avalia a qualidade do seu ensino ate aqui de 1 a 5?</label>
+                            <input type="number" min="1" max="5" name="" id="inputquestao2" placeholder="ex. 5">
+                        </li>
+                        <li>
+                            <label for="inputquestao3">Qual a chance de recomendarnos a alguem de 1 a 5?</label>
+                            <input type="range" min="1" max="5" name="" id="inputquestao3" value="1">
+                        </li>
+                    </ol>
+                </section>
+                <section>
+                <input type="submit">
+                </section>
+            </form>
+        </main>
+    </body>
+</html>
