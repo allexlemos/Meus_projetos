@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wgth@300;400;700&display=swap");
+body {
+    font-family:  'Lato', sans-serif;
+}
+h1 { 
+    text-align: center;
+    color: maroon;
+    font-size: 200;
+}
+
+.price {
+    color: rgb(219, 2, 2);}
+
+#favorito { 
+    color: blue;}
+
+.discount {
+    text-decoration: underline;
+    font-weight: 200;
+}
+
+h2 {
+    color: rgb(255, 138, 29);  
+}
+h2 {
+    /* color: rgba(255, 138, 29, 0.5);   */
+}
